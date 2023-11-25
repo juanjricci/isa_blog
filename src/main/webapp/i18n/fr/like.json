@@ -1,0 +1,25 @@
+{
+  "blogApp": {
+    "like": {
+      "home": {
+        "title": "Likes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Like",
+        "createOrEditLabel": "Créer ou éditer un Like",
+        "notFound": "Aucun Like trouvé"
+      },
+      "created": "Un nouveau Like a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Like avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Like avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Like {{ id }} ?"
+      },
+      "detail": {
+        "title": "Like"
+      },
+      "id": "ID",
+      "isliked": "Isliked",
+      "post": "Post"
+    }
+  }
+}
