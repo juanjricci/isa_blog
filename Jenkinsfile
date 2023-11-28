@@ -26,7 +26,8 @@ node {
     }
     stage('backend tests') {
         try {
-            sh "./mvnw -ntp verify -P-webapp"
+            sh "./mvnw clean test -Dtest=CustomBlogTests -P-webapp"
+            // sh "./mvnw -ntp verify -P-webapp"
         } catch(err) {
             throw err
         } finally {

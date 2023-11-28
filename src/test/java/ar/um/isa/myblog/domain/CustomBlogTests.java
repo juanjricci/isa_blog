@@ -3,9 +3,8 @@ package ar.um.isa.myblog.domain;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import org.junit.jupiter.api.Test;
-
 import jakarta.validation.ConstraintViolationException;
+import org.junit.jupiter.api.Test;
 
 public class CustomBlogTests {
 
@@ -48,7 +47,7 @@ public class CustomBlogTests {
         assertThat(handle).isEqualTo("my-blog-handle");
     }
 
-    // test if error displays when title has 3 character or less 
+    // test if error displays when title has 3 character or less
     @Test
     void testTitleValidation() {
         // Create a new blog object
@@ -61,5 +60,4 @@ public class CustomBlogTests {
         Exception exception = assertThrows(ConstraintViolationException.class, () -> blog.validate());
         assertThat(exception.getMessage()).contains("Title must not be empty or have 3 or more than characters");
     }
-    
 }
