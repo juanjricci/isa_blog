@@ -121,11 +121,11 @@ public class Blog implements Serializable {
 
     public Object validate() {
         if (getName() == null || getName().length() < 3) {
-            throw new ConstraintViolationException("Title must not be empty or have 3 or more than characters", null);
+            throw new ConstraintViolationException("Title must not be empty or have less than 3 characters", null);
         }
-    
+
         if (getHandle() == null || getHandle().length() < 3) {
-            throw new ConstraintViolationException("Handle must not be empty or have 3 or more than characters", null);
+            throw new ConstraintViolationException("Handle must not be empty or have less than 3 characters", null);
         }
         return handle;
     }

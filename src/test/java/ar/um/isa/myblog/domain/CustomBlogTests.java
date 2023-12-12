@@ -58,6 +58,6 @@ public class CustomBlogTests {
 
         // Assert that the validation constraint for title is violated
         Exception exception = assertThrows(ConstraintViolationException.class, () -> blog.validate());
-        assertThat(exception.getMessage()).contains("Title must not be empty or have 3 or more than characters");
+        assertThat(exception.getMessage()).contains("Title must not be empty or have less than 3 characters");
     }
 }

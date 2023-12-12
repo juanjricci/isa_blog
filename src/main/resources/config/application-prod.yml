@@ -98,7 +98,7 @@ jhipster:
       max-entries: 1000 # Number of objects in each cache entry
   cors:
     # Allow Ionic for JHipster by default (* no longer allowed in Spring Boot 2.4+)
-    allowed-origins: 'http://localhost:8100,https://localhost:8100,http://localhost:9000,https://localhost:9000,http://localhost:4200,https://localhost:4200,http://localhost:5601,https://localhost:5601,http://localhost:9200,https://localhost:9200,http://localhost:50000,https://localhost:50000'
+    allowed-origins: 'http://localhost:8100,https://localhost:8100,http://localhost:9000,https://localhost:9000,http://localhost:4200,https://localhost:4200,http://localhost:5601,https://localhost:5601,http://localhost:9200,https://localhost:9200,http://localhost:50000,https://localhost:50000,http://localhost:8100,capacitor://localhost'
     # Enable CORS when running in GitHub Codespaces
     allowed-origin-patterns: 'https://*.githubpreview.dev'
     allowed-methods: '*'
@@ -123,7 +123,7 @@ jhipster:
   logging:
     use-json-format: false # By default, logs are not in Json format
     logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
-      enabled: false
+      enabled: true
       host: localhost
       port: 50000
       ring-buffer-size: 512

@@ -4,7 +4,7 @@ services:
     image: jenkins/jenkins:lts-jdk11
     ports:
       - 49001:8080
-      - 50000:50000
+      - 50001:50001
     # uncomment for docker in docker
     #privileged: true
     #volumes:
